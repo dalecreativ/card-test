@@ -105,3 +105,36 @@ img {
   border-bottom-left-radius: var(--border-radius-small);
   border-bottom-right-radius: var(--border-radius-small);
 }
+
+.card__heading {
+  color: var(--color-grey-step0);
+  margin: .25rem 0;
+}
+
+.card__excerpt {
+  color: var(--color-grey-step1);
+  font-size: var(--size-l-2);
+  font-weight: normal;
+}
+
+.card__label-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: .5rem;
+}
+
+.card__label {
+  font-size: var(--size-l-1);
+  font-weight: 600;
+  letter-spacing: .05rem;
+  padding: 4px 11px;
+  text-transform: uppercase;
+}
+
+.card__label--pill {
+  background: var(--color-grey-step0);
+  color: white;
+  border-radius: var(--border-radius-medium);
+}
