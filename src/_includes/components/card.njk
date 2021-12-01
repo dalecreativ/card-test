@@ -1,16 +1,18 @@
-{% macro card() %}
+{% macro card(params) %}
     <article class="card">
-        <figure class="card__media">
-            <img class="card__image" src="http://placeimg.com/640/480/sports" alt="" />
-        </figure>
+
         <div class="card__content">
-            <p class="card__label">4 days ago</p>
-            <h4 class="card__heading">The role of AI in the design industry</h4>
-            <p class="card__excerpt">The idea of creating a machine that can mimic human intelligence is a mainstay in the field of technology.</p>
-             <ul class="card__label-list">
-                <li class="card__label card__label--pill">Design</li>
-                <li class="card__label card__label--pill">Development</li>
+            <h4 class="card__heading">{{params.heading}}</h4>
+            <p class="card__label card__label--publishDate">{{params.publishDate}}</p>
+            <p class="card__excerpt">{{params.excerpt}}</p>
+            <ul class="card__label-list">
+            {% for labelName in params.labels %}
+                <li class="card__label card__label--pill">{{labelName}}</li>
+            {% endfor %}
             </ul>
         </div>
+        <figure class="card__media">
+            <img class="card__image" src="{{params.imageSrc}}" alt="" />
+        </figure>
     </article>
 {% endmacro %}
