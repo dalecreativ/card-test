@@ -129,12 +129,13 @@ img {
   font-size: var(--size-l-1);
   font-weight: 600;
   letter-spacing: .05rem;
-  padding: 4px 11px;
+
   text-transform: uppercase;
 }
 
 .card__label--pill {
   background: var(--color-grey-step0);
   color: white;
+  padding: 4px 11px;
   border-radius: var(--border-radius-medium);
 }
