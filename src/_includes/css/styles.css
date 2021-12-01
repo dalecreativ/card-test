@@ -95,6 +95,10 @@ img {
   box-shadow: var(--box-shadow);
 }
 
+.card *:last-child {
+  margin-bottom: 0;
+}
+
 .card__media {
   display: flex;
 }
@@ -125,7 +129,6 @@ img {
   margin: .25rem 0;
 }
 
-
 .card__label-list {
   display: flex;
   flex-flow: row wrap;
@@ -146,6 +149,7 @@ img {
 
 .card__label--publishDate {
   order: -1;
+  margin-top: 0;
 }
 
 .card__label--pill {
