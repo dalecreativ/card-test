@@ -1,6 +1,8 @@
 ---
 title: A new title from frontmatter
 ---
+
+{%- from "./_includes/components/card.njk" import card %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,5 +12,6 @@ title: A new title from frontmatter
 </head>
 <body>
     <h1>A sample page</h1>
+    {{ card() }}
 </body>
 </html>
