@@ -68,3 +68,40 @@ small, .small {
 img {
   min-width: 100%;
 }
+
+.card-list {
+    padding: 1rem;
+}
+
+.card {
+  background: var(--color-grey-step2);
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+}
+
+.card__media {
+  display: flex;
+}
+
+.card__media,
+.card__image {
+    margin: 0;
+}
+
+.card__image {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.card__content {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0 1rem;
+  border: 1px solid var(--color-border);
+  border-top: none;
+  border-bottom-left-radius: var(--border-radius-small);
+  border-bottom-right-radius: var(--border-radius-small);
+}
